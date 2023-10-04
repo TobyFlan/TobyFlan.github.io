@@ -1,5 +1,3 @@
 # myWebsite
 
-will update readme later
-
-much later
+hosted my website using git pages
