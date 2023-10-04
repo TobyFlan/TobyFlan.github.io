@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Toby's Projects</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Toby's Projects">
+        <meta name="author" content="Toby Flanagan">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+        <link href="../css/projects.css" rel="stylesheet">    
+
+        <!-- styling for navbar -->
+        <link href="../css/navbar.css" rel="stylesheet">    
+        <script type="text/javascript" src="../js/navbar.js"></script>    
+        
+
+    </head>
+
+
+    <body>
+
+        <!-- button that reveals navbar -->
+        <div class="navbar-button" onclick="toggleNavbar()">
+            <img class="navbar-icon" id="navbar-icon" src="../resources/images/menu_button.png" alt="Menu">
+        </div>
+
+        <!-- navbar -->
+        <div class="navbar">
+
+            <a class="navbar-item" href="index.html">Home</a>
+            <a class="navbar-item" href="toby.html">Toby</a>
+            <a class="navbar-item" href="about.html">About</a>
+            <a class="navbar-item" href="projects.html">Projects</a>
+            <a class="navbar-item" href="contact.html">Contact</a>
+
+        </div>
+
+        <!--main title and background image-->
+        <div class="banner">
+            <div class="banner-content">
+                <span>PROJECTS</span><br>
+                <p class="banner-subtitle">The following are some projects i've worked on, enhancing a variation of my skills.</p>
+            </div>
+        </div>
+
+
+        <!-- project 1 -->
+        <div class="project-banner">
+
+            <img src="../resources/images/project_ram.png" alt="malloc project" class="project-image-wide">
+
+            <h1 class="project-header-wide">Malloc System Call</h1>
+
+            <p class="project-text-wide">Utilizing XV6, a small and simple Unix-based OS, I skillfully implemented a 
+                custom system call for memory allocation within the OS. This dynamic memory allocation mechanism 
+                allowed programs to efficiently use memory as needed and freed resources when they were no longer 
+                required. As a result, numerous applications within the OS were able to have improved space efficiency, 
+                optimizing their performance.</p>
+
+        </div>
+
+
+
+        <!-- project 2 -->
+        <div class="project-banner">
+
+            <img src="../resources/images/project_sports_ball.png" alt="sports booking system project" class="project-image-wide">
+
+            <h1 class="project-header-wide">Gym Booking System</h1>
+
+            <p class="project-text-wide">In a group of 6, using a hybrid of the python framework flask and html, we created
+                a fully functional gym booking system, including the ability to create and edit accounts, using a mySQL database,
+                purchase memberships and bookings up to 2 weeks in advance through the stripe API, ask questions to our own
+                AI chatbot helper powered by chatGPT, as well as managing the website and users of it through an admin account. 
+                In under 6 weeks we had made a fully functional and responsive website. The use of devops and various meetings was
+                instrumental to this project, as we alternated roles to make sure that everyone got a chance to work on every part 
+                of the system.
+            </p>
+
+        </div>
+
+
+
+        <!-- project 3 -->
+        <div class="project-banner">
+
+            <img src="../resources/images/SolarSystem.png" alt="solar system project" class="project-image-wide">
+
+            <h1 class="project-header-wide">Solar System Simulation</h1>
+
+            <p class="project-text-wide">Using a python library called VPython, I challenged myself to make an accurate 3D simulation
+                of our solar system, using real world statistics to fuel the mathematics behind the animation. Despite being 
+                an outdated library, I chose this library for its simplicity and how easy it was to implement in python. As well as
+                its resonably extensive documentation. This project allowed me to express my interests visually, while deepening my
+                understanding of how simulations can be made.
+            </p>
+
+        </div>
+
+
+
+        <!-- project 4 -->
+        <div class="project-banner">
+
+            <img src="../resources/images/project_compliler.png" alt="compiler project" class="project-image-wide">
+
+            <h1 class="project-header-wide">JACK compiler</h1>
+
+            <p class="project-text-wide">In the C language, I designed, developed, and tested to completion the first three stages 
+                of a compiler for the JACK programming language. The Lexical analyzer (Lexer) parsed every individual word, symbol, 
+                or other type into a linked list with enough metadata to identify each element. Next was the Semantic analyzer 
+                (Parser), which used a recursive descent parser to ensure that all of the 'words' from the lexer were in the correct 
+                order. Finally, I implemented the semantic analyzer, using a symbol table implemented as a tree, to ensure that all 
+                variables and functions are declared and called correctly. This project required a high attention to detail and 
+                extensive knowledge of JACK language design and its syntax. It reinforced in me the importance of debugging and 
+                testing, while teaching me a new way of problem-solving.
+            </p>
+
+        </div>
+
+
+        <div class="break-bottom"></div>
+
+    </body>

@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'computer_speak_v0.3regular';
+    src: url('computer_speak_v0.3-webfont.woff2') format('woff2'),
+         url('computer_speak_v0.3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, html{
+
+    overflow-x: hidden;
+    overflow-y:auto;
+    height: 100vh;
+    margin: 0vh;
+    max-width: 100vw;
+    font: 400 64px/1.8 "computer_speak_v0.3regular";
+    font-size: 64px;
+    background-color: #111;
+
+}
+
+/* animate the banner */
+@keyframes animate-grad{
+
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+.banner{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    background:linear-gradient(-70deg, #ffcc99, #ff99ff,#99ddff, whitesmoke );
+    background-size: 400% 400%;
+    width: 100%;
+    height:160px;
+    animation: animate-grad 25s ease infinite;
+
+}
+
+.banner-content{
+
+    font-size: max(36px, 11px);
+    margin: 0 auto;
+    padding: 10px;
+    color: #111;
+    text-align:center;
+
+}
+
+.banner-subtitle{
+
+    font-size: max(16px, 5px);
+    margin: 0 auto;
+    padding: 10px;
+    color: #111;
+    text-align:center;
+
+
+}
+
+.break-bottom{
+
+    margin-bottom:12.5vh;
+
+}
+
+/* css for project banners */
+.project-banner{
+
+    position: relative;
+    background:linear-gradient(-70deg, #ffcc99, #ff99ff,#99ddff, whitesmoke );
+    background-size: 400% 400%;
+    width: 100%;
+    /* min-height:320px; */
+    min-height: 100px;
+    margin-top:200px;
+    animation: animate-grad 25s ease infinite;
+
+}
+
+.project-image-wide{
+
+    position: absolute;
+    top: -100px;
+    left:10vw;
+    width: 280px;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.project-header-wide{
+
+    position: absolute;
+    left:calc(10vw + 300px);
+    font-size: 3.5vw;
+    color: #111;
+    top:-2vw;
+    white-space: nowrap;
+
+}
+
+.project-text-wide{
+
+    display: inline-block;
+    margin-left:1vw;
+    font-size:16px;
+    color:#111;
+    margin-top:115px;
+
+}
+
+
+/* want window to change layout to this once it has been shrunk in the x axis */
+
+@media screen and (max-width: 740px){
+
+    .project-image-wide{
+
+        left:calc(50vw - 140px);
+    
+    }
+
+    .project-header-wide{
+
+        font-size:32px;
+        top:80px;
+        left:50%;
+        transform: translateX(-50%);
+
+    }
+
+    .project-text-wide{
+
+        margin-top:160px;
+        font-size:16px;
+
+    }
+
+    .project-banner{
+
+        /* min-height: 445px; */
+        min-height: 100px;
+
+    }
+
+}
