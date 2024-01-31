@@ -161,11 +161,11 @@
         <!-- project 7 -->
         <div class="project-banner">
 
-            <img src="./resources/images/blank-project.png" alt="asteroid game project" class="project-image-wide">
+            <img src="./resources/images/asteroid_game_project.png" alt="asteroid game project" class="project-image-wide">
 
             <h1 class="project-header-wide">2D Asteroid Game</h1>
 
-            <p class="project-text-wide">In C++, using the OpenGL library, I created a basic 2d asteroid game where the user could
+            <p class="project-text-wide">In C++, using GLFW, I created a basic 2d asteroid game where the user could
                 pilot a ship around a sea of asteroids in space. This included the implementation of many graphical techniques, for
                 example, line drawing using bresenhams algorithm, image blitting, handling line rotations and line clipping / culling.
             </p>
@@ -202,6 +202,42 @@
                 MongoDB for the database, and FlyCTL to temporarily deploy the app to the web. Users could add entries to the
                 phonebook, consiting of a name and phone number, and they could also search for other entries by name. Through
                 an admin page, entries could be removed from the database.
+            </p>
+
+        </div>
+
+
+        <!-- project 9 -->
+        <div class="project-banner">
+
+            <img src="./resources/images/blank-project.png" alt="3d renderer project" class="project-image-wide">
+
+            <h1 class="project-header-wide">Custom 3D scene renderer</h1>
+
+            <p class="project-text-wide">Using OpenGL and GLFW in C++, I created a custom interactive 3D renderer in a team of 3.
+                This involved manually handling matrix / vector functions for displaying the 3D scene to the 2D monitor and to handle
+                rotations for the objects, loading wavefront OBJ files and displaying them, adding textures to 3D objects, handling 
+                simple object instancing, creating a custom spaceship model, adding local light sources and handling appropriate shading,
+                basic animations for the rocket ship as well as adding particle effects for the ship's movement. Furthermore, as a team,
+                we also had to implement camera movement, and tracking cameras for the space ship's animation, as well as a split screen
+                feature.
+            </p>
+
+        </div>
+
+
+        <!-- project 10 -->
+        <div class="project-banner">
+
+            <img src="./resources/images/blank-project.png" alt="sensor network project" class="project-image-wide">
+`
+            <h1 class="project-header-wide">Simulated Sensor Network</h1>
+
+            <p class="project-text-wide">Using Microsoft Azure, I created a distributed sensor network in JavaScript of 20 virtual 
+                sensors. This required creating an Azure Function App that contained 2 functions. Function one randomly generated sensor data, 
+                and then appended this data to an Azure SQL database. These entries would be time stamped and all data older than 2 days
+                would be deleted. Function 2, would track this database and trigger every time an update was detected. It processed the 
+                data and calculated maximums, minimums and averages for all 20 sensors, and stored these to a seperate database.
             </p>
 
         </div>
