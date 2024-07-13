@@ -52,15 +52,16 @@
         <!-- project 1 -->
         <div class="project-banner">
 
-            <img src="./resources/images/project_ram.png" alt="malloc project" class="project-image-wide">
+            <img src="./resources/images/project_blackhole.png" alt="black hole project" class="project-image-wide">
 
-            <h1 class="project-header-wide">Malloc System Call</h1>
+            <h1 class="project-header-wide">Black Hole Renderer</h1>
 
-            <p class="project-text-wide">Utilizing XV6, a small and simple Unix-based OS, I skillfully implemented a 
-                custom system call for memory allocation within the OS. This dynamic memory allocation mechanism 
-                allowed programs to efficiently use memory as needed and freed resources when they were no longer 
-                required. As a result, numerous applications within the OS were able to have improved space efficiency, 
-                optimizing their performance.</p>
+            <p class="project-text-wide">Successfully creating a black hole renderer in C++ using OpenGL and GLFW, I was able to 
+                simulate the visual effects of a black hole on light. This involved creating a 3D scene with a black hole at the center, 
+                and a star field in the background. The black hole was represented by a sphere with a custom ray-tracing algorithm that
+                warped the light around it, creating the illusion of a black hole. This project was a great way to challenge myself and 
+                learn more about the complexities of light and how it interacts with objects in space.
+            </p>
 
         </div>
 
@@ -89,15 +90,15 @@
         <!-- project 3 -->
         <div class="project-banner">
 
-            <img src="./resources/images/SolarSystem.png" alt="solar system project" class="project-image-wide">
+            <img src="./resources/images/blank-project.png" alt="sensor network project" class="project-image-wide">
 
-            <h1 class="project-header-wide">Solar System Simulation</h1>
+            <h1 class="project-header-wide">Simulated Sensor Network</h1>
 
-            <p class="project-text-wide">Using a python library called VPython, I challenged myself to make an accurate 3D simulation
-                of our solar system, using real world statistics to fuel the mathematics behind the animation. Despite being 
-                an outdated library, I chose this library for its simplicity and how easy it was to implement in python. As well as
-                its resonably extensive documentation. This project allowed me to express my interests visually, while deepening my
-                understanding of how simulations can be made.
+            <p class="project-text-wide">Using Microsoft Azure, I created a distributed sensor network in JavaScript of 20 virtual 
+                sensors. This required creating an Azure Function App that contained 2 functions. Function one randomly generated sensor data, 
+                and then appended this data to an Azure SQL database. These entries would be time stamped and all data older than 2 days
+                would be deleted. Function 2, would track this database and trigger every time an update was detected. It processed the 
+                data and calculated maximums, minimums and averages for all 20 sensors, and stored these to a seperate database.
             </p>
 
         </div>
@@ -128,13 +129,15 @@
         <!-- project 5 -->
         <div class="project-banner">
 
-            <img src="./resources/images/project_blackhole.png" alt="black hole project" class="project-image-wide">
+            <img src="./resources/images/project_ram.png" alt="malloc project" class="project-image-wide">
 
-            <h1 class="project-header-wide">Black Hole Renderer</h1>
+            <h1 class="project-header-wide">Malloc System Call</h1>
 
-            <p class="project-text-wide">Currently working on a  research project using ray tracing to simulate gravitational
-                lensing around a black hole.
-            </p>
+            <p class="project-text-wide">Utilizing XV6, a small and simple Unix-based OS, I skillfully implemented a 
+                custom system call for memory allocation within the OS. This dynamic memory allocation mechanism 
+                allowed programs to efficiently use memory as needed and freed resources when they were no longer 
+                required. As a result, numerous applications within the OS were able to have improved space efficiency, 
+                optimizing their performance.</p>
 
         </div>
 
@@ -229,20 +232,41 @@
         <!-- project 10 -->
         <div class="project-banner">
 
-            <img src="./resources/images/blank-project.png" alt="sensor network project" class="project-image-wide">
+            <img src="./resources/images/SolarSystem.png" alt="solar system project" class="project-image-wide">
 
-            <h1 class="project-header-wide">Simulated Sensor Network</h1>
+            <h1 class="project-header-wide">Solar System Simulation</h1>
 
-            <p class="project-text-wide">Using Microsoft Azure, I created a distributed sensor network in JavaScript of 20 virtual 
-                sensors. This required creating an Azure Function App that contained 2 functions. Function one randomly generated sensor data, 
-                and then appended this data to an Azure SQL database. These entries would be time stamped and all data older than 2 days
-                would be deleted. Function 2, would track this database and trigger every time an update was detected. It processed the 
-                data and calculated maximums, minimums and averages for all 20 sensors, and stored these to a seperate database.
+            <p class="project-text-wide">Using a python library called VPython, I challenged myself to make an accurate 3D simulation
+                of our solar system, using real world statistics to fuel the mathematics behind the animation. Despite being 
+                an outdated library, I chose this library for its simplicity and how easy it was to implement in python. As well as
+                its resonably extensive documentation. This project allowed me to express my interests visually, while deepening my
+                understanding of how simulations can be made.
             </p>
 
         </div>
 
 
+        <!-- project 11 -->
+        <div class="project-banner">
+
+            <img src="./resources/images/blank-project.png" alt="web scraper project" class="project-image-wide">
+
+            <h1 class="project-header-wide">Web Scraper</h1>
+
+            <p class="project-text-wide">Using Python, the requests library, and the BeautifulSoup library, I created a web scraper that could scrape
+                and dynamically gather info from an entire web server. Data could then be retrieved through the creation of an inverted index, as well as
+                scoring different pages to provide a user with effective multi-term search results. This project was a great way to learn about web scraping
+                and how to handle the data that is scraped. I also learned about the importance of respecting the website's robots.txt
+                file, and how to handle errors when scraping.
+            </p>
+
+        </div>
+
         <div class="break-bottom"></div>
 
+        <div class="footer">
+            <p>© 2024 Tobias Flanagan</p>
+
     </body>
+
+</html>
